@@ -1,0 +1,24 @@
+config:
+  partial_parse: true
+  printer_width: 120
+  send_anonymous_usage_stats: false
+  use_colors: true
+normalize:
+  outputs:
+    prod:
+      account: qp20383.ap-northeast-1.aws
+      client_session_keep_alive: false
+      connect_retries: 3
+      connect_timeout: 15
+      database: AIRBYTE_DATABASE
+      password: password
+      query_tag: normalization
+      retry_all: true
+      retry_on_database_errors: true
+      role: AIRBYTE_ROLE
+      schema: AIRBYTE_SCHEMA
+      threads: 5
+      type: snowflake
+      user: AIRBYTE_USER
+      warehouse: AIRBYTE_WAREHOUSE
+  target: prod
