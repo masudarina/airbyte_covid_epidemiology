@@ -1,9 +1,0 @@
-version: 2
-sources:
-- name: AIRBYTE_SCHEMA
-  quoting:
-    database: true
-    schema: false
-    identifier: false
-  tables:
-  - name: _AIRBYTE_RAW_0610_CSVDATACOVID_EPIDEMIOLOGY
